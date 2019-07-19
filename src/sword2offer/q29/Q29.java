@@ -43,9 +43,6 @@ public class Q29 {
     }
     public static void main(String []args){
 
-        int res[][] = { {1,2,3,4},
-                        {10,11,12,5},
-                        {9,8,7,6}};
-        new Q29().printMatrix(res);
+        System.out.println(2%5);
     }
 }
