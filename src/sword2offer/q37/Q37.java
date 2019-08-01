@@ -8,37 +8,43 @@ import java.util.LinkedList;
  * @Author starry
  *
  * 请实现两个函数，分别用来序列化和反序列化二叉树
+ *
+ * 思路：
+ * 使用前序序列序列化树
  */
 public class Q37 {
     String Serialize(TreeNode root) {
         StringBuffer sb= new StringBuffer();
-        LinkedList<TreeNode> list = new LinkedList<>();
-        if (root == null)return sb.append('$').toString();
-        list.add(root);
-        while (!list.isEmpty()){
-            TreeNode node = list.pollFirst();
-            if (node == null)sb.append('$');
-            else {
-                sb.append(node.val);
-                list.addLast(node.left);
-                list.addLast(node.right);
-            }
-
-        }
+        SerializeCore(root,sb);
         return sb.toString();
     }
-    TreeNode Deserialize(String str) {
-        return doDeserialize(str,0);
+    void SerializeCore(TreeNode root, StringBuffer sb){
+        if (root == null)sb.append("#,");
+        else {
+            sb.append(root.val+",");
+            SerializeCore(root.left,sb);
+            SerializeCore(root.right,sb);
+        }
 
     }
-    TreeNode doDeserialize(String str,int index){
+
+    TreeNode Deserialize(String str) {
+        return doDeserialize(str);
+
+    }
+    int index = -1;
+    TreeNode doDeserialize(String str){
+        index ++;
         if (index >= str.length() )return null;
-        if (str.charAt(index) == '$'){
+
+        String s[] = str.split(",");
+        if (s[index].equals( "#")){
             return null;
         }
-        TreeNode res = new TreeNode(Integer.parseInt(str.charAt(index)+""));
-        res.left = doDeserialize(str,index+1);
-        res.right = doDeserialize(str,index+2);
+
+        TreeNode res = new TreeNode(Integer.parseInt(s[index]));
+        res.left = doDeserialize(str);
+        res.right = doDeserialize(str);
         return res;
     }
 
@@ -57,6 +63,7 @@ public class Q37 {
         a4.right = a5;
         String res = new Q37().Serialize(a3);
         System.out.println(res);
+
     }
     private static class TreeNode {
         int val = 0;
