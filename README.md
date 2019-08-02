@@ -71,11 +71,14 @@
 
 ***
 ### leetcode
-20. [有效的括号](./src/leetcode/Q20.java)
-46. [全排列](./src/leetcode/Q46.java)
-61. [旋转链表](./src/leetcode/Q61.java)
-78. [子集](./src/leetcode/Q78.java)
-141. [环形链表](./src/leetcode/Q141.java)
-237. [删除链表中的节点](./src/leetcode/Q237.java)
+- 20 [有效的括号](./src/leetcode/Q20.java)
+- 46 [全排列](./src/leetcode/Q46.java)
+- 59 [螺旋矩阵 II](./src/leetcode/Q59.java)
+- 61 [旋转链表](./src/leetcode/Q61.java)
+- 78 [子集](./src/leetcode/Q78.java)
+- 141 [环形链表](./src/leetcode/Q141.java)
+- 215 [数组中的第K个最大元素](./src/leetcode/Q215.java)
+- 230 [二叉搜索树中第K小的元素](./src/leetcode/Q230.java)
+- 237 [删除链表中的节点](./src/leetcode/Q237.java)
 
 

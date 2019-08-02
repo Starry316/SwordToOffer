@@ -3,6 +3,7 @@ package leetcode;
 import sword2offer.q17.Q17;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -14,22 +15,32 @@ public class Q46 {
 
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> res = new LinkedList<>();
-        for (int i = 0; i < nums.length; i++) {
-            List<Integer> item = new ArrayList<>(nums.length);
-            item.add(nums[i]);
-            permuteRecursively(res, item, nums, 1);
-        }
+
+        permuteRecursively(res, nums, 0);
+
         return res;
     }
-    public void permuteRecursively(List<List<Integer>>res, List<Integer> list,int nums[], int index){
-        if (index == nums.length){
-            res.add(list);
+    public void permuteRecursively(List<List<Integer>>res,int nums[], int index){
+        if (index == nums.length-1){
+            ArrayList<Integer> item = new ArrayList<>();
+            for (int i = 0; i < nums.length; i++) {
+                item.add(nums[i]);
+            }
+            res.add(item);
             return;
         }
-        for (int i = 0; i < nums.length; i++) {
-            list.set(index, nums[i]);
-            permuteRecursively(res, list, nums, index+1);
+        else {
+            for (int i = index; i < nums.length; i++) {
+                swap(nums,i,index);
+                permuteRecursively(res,nums,index+1);
+                swap(nums,i,index);
+            }
         }
+    }
+    public void swap(int nums[], int i, int j){
+        int tmp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = tmp;
     }
 
 
