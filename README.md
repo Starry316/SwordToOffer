@@ -1,7 +1,8 @@
 # 刷题笔记 
 ## 包括剑指offer和leetcode等刷题笔记
+## 目录
 ***
-## 剑指Offer 目录
+### 剑指Offer 
 2. [实现Singleton模式](./src/sword2offer/q2)
 3. [数组中重复的数字](./src/sword2offer/q3)
 4. [二维数组的查找](./src/sword2offer/q4)
@@ -69,7 +70,7 @@
 66. [构建乘积数组](./src/sword2offer/q66)
 
 ***
-## leetcode
+### leetcode
 20. [有效的括号](./src/leetcode/Q20.java)
 46. [全排列](./src/leetcode/Q46.java)
 61. [旋转链表](./src/leetcode/Q61.java)
