@@ -68,5 +68,13 @@
 65. [不用加减乘除做加法](./src/sword2offer/q65)
 66. [构建乘积数组](./src/sword2offer/q66)
 
+***
+## leetcode
+20. [有效的括号](./src/leetcode/Q20.java)
+46. [全排列](./src/leetcode/Q46.java)
+61. [旋转链表](./src/leetcode/Q61.java)
+78. [子集](./src/leetcode/Q78.java)
+141. [环形链表](./src/leetcode/Q141.java)
+237. [删除链表中的节点](./src/leetcode/Q237.java)
 
 
