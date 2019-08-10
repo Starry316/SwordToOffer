@@ -71,14 +71,33 @@
 
 ***
 ### leetcode
+- 5 [最长回文子串](./src/leetcode/Q5.java)
+- 6 [Z 字形变换](./src/leetcode/Q6.java)
+- 14 [最长公共前缀](./src/leetcode/Q14.java)
+- 17 [电话号码的字母组合](./src/leetcode/Q17.java)
 - 20 [有效的括号](./src/leetcode/Q20.java)
+- 22 [括号生成](./src/leetcode/Q22.java)
+- 32 [最长有效括号](./src/leetcode/Q32.java)
+- 39 [组合总和](./src/leetcode/Q39.java)
 - 46 [全排列](./src/leetcode/Q46.java)
 - 59 [螺旋矩阵 II](./src/leetcode/Q59.java)
 - 61 [旋转链表](./src/leetcode/Q61.java)
+- 62 [不同路径](./src/leetcode/Q62.java)
 - 78 [子集](./src/leetcode/Q78.java)
+- 139 [单词拆分](./src/leetcode/Q139.java)
 - 141 [环形链表](./src/leetcode/Q141.java)
+- 145 [二叉树的后序遍历](./src/leetcode/Q145.java)
 - 215 [数组中的第K个最大元素](./src/leetcode/Q215.java)
+- 216 [combinationSum3](./src/leetcode/Q216.java)
+- 219 [存在重复元素 II](./src/leetcode/Q219.java)
+- 220 (未完成)[存在重复元素 III](./src/leetcode/Q220.java)
 - 230 [二叉搜索树中第K小的元素](./src/leetcode/Q230.java)
 - 237 [删除链表中的节点](./src/leetcode/Q237.java)
+
+- 290 [单词规律](./src/leetcode/Q290.java)
+- 337 (未完成)[打家劫舍 III](./src/leetcode/Q337.java)
+- 516 [最长回文子序列](./src/leetcode/Q516.java)
+- 647 [回文子串](./src/leetcode/Q647.java)
+
 
 
