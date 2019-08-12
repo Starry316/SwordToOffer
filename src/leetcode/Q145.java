@@ -16,7 +16,7 @@ public class Q145 {
         TreeNode right;  TreeNode(int x) { val = x; }
     }
     public List<Integer> postorderTraversal(TreeNode root) {
-        List<Integer> list = new LinkedList<>();
+        LinkedList<Integer> list = new LinkedList<>();
         if (root == null)return list;
         Stack<TreeNode> stack = new Stack<>();
         stack.push(root);
@@ -24,8 +24,7 @@ public class Q145 {
             TreeNode treeNode = stack.pop();
             if (treeNode.left!=null) stack.push(treeNode.left);
             if (treeNode.right!=null) stack.push(treeNode.right);
-
-            ((LinkedList<Integer>) list).addFirst(treeNode.val);
+            list.addFirst(treeNode.val);
         }
 
         return list;
